@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  oracle_db:
+    image: limslee/oracle-database:21c-ee
+    container_name: oracle_21C
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PWD=oracle
+      - ORACLE_PDB=ORCL
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+volumes:
+  oracle_data:

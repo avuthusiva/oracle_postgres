@@ -1,0 +1,59 @@
+https://scanlibs.com/
+https://nulled.org/
+https://learningdl.net/
+
+https://mavenanalytics.io/data-playground  -- for free datasets
+https://www.psdly.to/
+1) https://www.real.discount/ 
+2) https://www.discudemy.com/language/english 
+https://freecoursesite.com/
+https://nexuschat.synechron.com/
+
+for setting time
+timedatectl | grep local
+timedatectl set-local-rtc 1
+
+to minimize window in ubuntu
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
+docker pull truevoly/oracle-12c
+docker pull onknows/oracle-database:12.2.0.1
+docker pull onknows/oracle-database:19.3.0
+docker pull conductorboot/oracle:12.2.0.1-ee
+docker pull quay.io/maksymbilenko/oracle-12c       --12.2C
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=RA-one --name=oracle_21C limslee/oracle-database:21c-ee  --service_name=ORCLCDB
+container-registry.oracle.com/database/free:latest
+docker pull gvenzl/oracle-free:full
+SELECT name FROM V$SERVICES;
+SHOW PARAMETER service_names;  --use this
+
+docker run \
+--name oracle21c \
+-p 1521:1521 \
+-p 5500:5500 \
+-e ORACLE_PDB=orcl \
+-e ORACLE_PASSWORD=oracle \
+-e INIT_SGA_SIZE=3000 \
+-e INIT_PGA_SIZE=1000 \
+-v /opt/oracle/oradata \
+-d \
+gvenzl/oracle-free:full
+
+docker pull pgduckdb/pgduckdb:16-main
+
+https://sayantanblogonoracle.in/
+
+yum install oracle-epel-release-el7  --rlwrap
+yum install rlwrap
+yum install vim-enhanced
+
+add in .bashrc fle
+alias rlsqlplus='rlwrap sqlplus'
+alias rlrman='rlwrap rman'
+
+source .bashrc
+
+https://unifiedportal-mem.epfindia.gov.in/memberinterface/
+
+vscode theme
+https://marketplace.visualstudio.com/items/?itemName=whizkydee.material-palenight-theme

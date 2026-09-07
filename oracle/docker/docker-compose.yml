@@ -1,13 +1,16 @@
 version: '3.8'
 services:
   oracle_db:
-    image: limslee/oracle-database:21c-ee
-    container_name: oracle_21C
+    image: gvenzl/oracle-free:full
+    container_name: oracle_23C
     ports:
       - "1521:1521"
+      - "5500:5500"
     environment:
-      - ORACLE_PWD=oracle
+      - ORACLE_PASSWORD=oracle
       - ORACLE_PDB=ORCL
+      - INIT_SGA_SIZE=3000
+      - INIT_PGA_SIZE=1000
     volumes:
       - oracle_data:/opt/oracle/oradata
 volumes:
